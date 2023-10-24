@@ -6,7 +6,7 @@
     app:startDestination="@id/clockFragment2">
     <fragment
         android:id="@+id/clockFragment2"
-        android:name="com.example.focusclock.presentation.fragments.ClockFragment"
+        android:name="com.example.focusclock.presentation.fragments.clock.ClockFragment"
         android:label="fragment_clock"
         tools:layout="@layout/fragment_clock" />
 </navigation>

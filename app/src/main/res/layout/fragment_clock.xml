@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".presentation.fragments.ClockFragment">
+    tools:context=".presentation.fragments.clock.ClockFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_container"
@@ -40,18 +40,32 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/tv_am_pm"
+                        android:id="@+id/tv_am"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:visibility="gone"
                         android:text="@string/am"
                         android:textColor="@color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
+                        android:visibility="gone"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_pm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/pm"
+                        android:textColor="@color/white"
+                        android:textSize="42sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
                         android:id="@+id/tv_hours"
@@ -68,7 +82,7 @@
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="4dp"
+                        android:layout_height="2dp"
                         android:background="@color/black"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +126,7 @@
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="4dp"
+                        android:layout_height="2dp"
                         android:background="@color/black"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -123,8 +137,8 @@
                         android:id="@+id/tv_seconds"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
                         android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"
                         android:fontFamily="@font/bebasneue_regular"
                         android:text="@string/_59"
                         android:textColor="@color/white"
