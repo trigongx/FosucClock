@@ -7,7 +7,6 @@ import com.example.focusclock.R
 
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,8 +26,5 @@ class MainActivity : AppCompatActivity() {
                         or View.SYSTEM_UI_FLAG_LOW_PROFILE
                         or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                 )
-    }
-    companion object{
-        const val PREF_NAME = "pref.name"
     }
 }

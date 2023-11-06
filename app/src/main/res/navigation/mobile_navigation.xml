@@ -3,10 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/clockFragment2">
+    app:startDestination="@id/clockFragment">
     <fragment
-        android:id="@+id/clockFragment2"
+        android:id="@+id/clockFragment"
         android:name="com.example.focusclock.presentation.fragments.clock.ClockFragment"
         android:label="fragment_clock"
         tools:layout="@layout/fragment_clock" />
+    <fragment
+        android:id="@+id/stopwatchFragment"
+        android:name="com.example.focusclock.presentation.fragments.stopwatch.StopwatchFragment"
+        android:label="fragment_stopwatch"
+        tools:layout="@layout/fragment_stopwatch" />
+    <fragment
+        android:id="@+id/pomodoroFragment"
+        android:name="com.example.focusclock.presentation.fragments.pomodoro.PomodoroFragment"
+        android:label="fragment_pomodoro"
+        tools:layout="@layout/fragment_pomodoro" />
 </navigation>
